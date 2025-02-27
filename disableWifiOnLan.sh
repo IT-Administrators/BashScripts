@@ -18,7 +18,8 @@ IFACE="$1"; EVENT="$2"
 DEVICES="enp0s31f6 enxac1a3d9ae07c"
 
 # Debugging informations.
-logger "Network Dispatcher: iface:$IFACE event:$EVENT" \ "id: $CONNECTION_ID uuid $CONNECTION_UUID"
+logger "Network Dispatcher: iface:$IFACE event:$EVENT" \
+        "id: $CONNECTION_ID uuid $CONNECTION_UUID"
 
 # Check if devices list contains interface.
 if [[ $DEVICES =- $IFACE ]]; then
