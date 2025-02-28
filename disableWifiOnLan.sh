@@ -3,12 +3,16 @@
 # OS: Debian
 # /bin/bash <scriptname>
 
+# ----DESCRIPTION
+# The devices varible must be changed to current devices.
+# Run <ip link> to get devices. Than change variable.
 # Script must be copied to /ect/NetworkManager/dispatcher.d
 # Create correct file permissions
-# sudo chmod 755 disableWifiOnLan.sh
-# sudo shmod a+x disableWifiOnLan.sh
+# <sudo chmod 755 disableWifiOnLan.sh>
+# <sudo shmod a+x disableWifiOnLan.sh>
 # Restart service
-# sudo systemctl restart NetworkManager
+# <sudo systemctl restart NetworkManager>
+# ----END
 
 #!/bin/bash
 

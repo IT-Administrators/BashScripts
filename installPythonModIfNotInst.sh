@@ -3,11 +3,12 @@
 # OS: Debian
 # /bin/bash <scriptname>
 
-# ----Description
+# ----DESCRIPTION
 # Install python module if not installed.
 # By default pip and venv of are not installed on debian.
 # Running the script without any parameter defaults to venv module installation.
-# ----
+# ----END
+
 #!/bin/bash
 
 # Create varible to specify python module.

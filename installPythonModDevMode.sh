@@ -3,6 +3,10 @@
 # OS: Debian
 # /bin/bash <scriptname>
 
+# ----DESCRIPTION
+# Install python module from current directory in development mode.
+# ----END
+
 #!/bin/bash
-# Install python mdoule in development mode.
+
 python3 -m pip install -e .
