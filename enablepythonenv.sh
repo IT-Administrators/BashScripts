@@ -4,5 +4,5 @@
 # /bin/bash <scriptname>
 
 #!/bin/bash
-# Install python mdoule in development mode.
-python3 -m pip install -e .
+# Enable python virtual environment on debian.
+. ./env/bin/activate
