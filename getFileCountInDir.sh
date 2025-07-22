@@ -3,11 +3,11 @@
 # OS: Debian
 # /bin/bash <scriptname>
 
-#!/bin/bash
-
 # ----DESCRIPTION
 # Get the filecount of the specified directory.
 # ----END
+
+#!/bin/bash
 
 # Input parameter
 DIR="$1"

@@ -3,11 +3,11 @@
 # OS: Debian
 # /bin/bash <scriptname>
 
-#!/bin/bash
-
 # ----DESCRIPTION
 # Get the size of the current directory.
 # ----END
+
+#!/bin/bash
 
 DIR="$1"
 # Check if direcotry provided.

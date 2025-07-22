@@ -3,11 +3,11 @@
 # OS: Debian
 # /bin/bash <scriptname> <username> <DIRECTORY>
 
-#!/bin/bash
-
 # ----DESCRIPTION
 # Get all files of the specified user in the specified DIRECTORY.
 # ----END
+
+#!/bin/bash
 
 CURRENTUSER="$1"
 DIRECTORY="$2"

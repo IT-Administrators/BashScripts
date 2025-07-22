@@ -3,11 +3,11 @@
 # OS: Debian
 # /bin/bash <scriptname>
 
-#!/bin/bash
-
 # ----DESCRIPTION
 # This file checks if the current user is sudo.
 # ----END
+
+#!/bin/bash
 
 # Check if current user is sudo.
 is_sudo(){
