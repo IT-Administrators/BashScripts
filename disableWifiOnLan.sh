@@ -4,7 +4,7 @@
 # /bin/bash <scriptname>
 
 # ----DESCRIPTION
-# The devices varible must be changed to current devices.
+# The devices variable must be changed to current devices.
 # Run <ip link> to get devices. Than change variable.
 # Script must be copied to /ect/NetworkManager/dispatcher.d
 # Create correct file permissions

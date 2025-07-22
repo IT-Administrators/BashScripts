@@ -1,29 +1,29 @@
 # Author: IT-Administrators
 # License: UNLICENSE
 # OS: Debian
-# /bin/bash <scriptname> <username> <directory>
+# /bin/bash <scriptname> <username> <DIRECTORY>
 
 #!/bin/bash
 
 # ----DESCRIPTION
-# Get all files of the specified user in the specified directory.
+# Get all files of the specified user in the specified DIRECTORY.
 # ----END
 
-currentUser="$1"
-directory="$2"
+CURRENTUSER="$1"
+DIRECTORY="$2"
 
 # Check if user was specified otherwise use current user.
 # -z checks for empty variable (0).
 if [ -z "$1" ];
-    then currentUser=$(whoami)
+    then CURRENTUSER=$(whoami)
 fi
-# Check if directory was specified otherwise use current.
+# Check if DIRECTORY was specified otherwise use current.
 if [ -z "$2" ];
-    then directory=$(pwd)
+    then DIRECTORY=$(pwd)
 fi
 
-# Check if specified directory is path. 
-if [ -d $directory ]; 
-    then find $directory -user $currentUser -print 2>/dev/null
-    else find $currentUser -user $directory -print 2>/dev/null
+# Check if specified DIRECTORY is path. 
+if [ -d $DIRECTORY ]; 
+    then find $DIRECTORY -user $CURRENTUSER -print 2>/dev/null
+    else find $CURRENTUSER -user $DIRECTORY -print 2>/dev/null
 fi
