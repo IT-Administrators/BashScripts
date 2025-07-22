@@ -12,4 +12,9 @@
 # Input parameter
 DIR="$1"
 
-ls $DIR | wc -l
+# Check if directory was specified otherwise use current.
+if [ -z "$1" ];
+    then DIR=$(pwd)
+fi
+# Include hidden files.
+ls $DIR -la | wc -l
