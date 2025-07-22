@@ -13,7 +13,7 @@ currentUser="$1"
 directory="$2"
 
 # Check if user was specified otherwise use current user.
-# -z checks for empty variable.
+# -z checks for empty variable (0).
 if [ -z "$1" ];
     then currentUser=$(whoami)
 fi
