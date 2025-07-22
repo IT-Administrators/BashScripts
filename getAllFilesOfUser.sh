@@ -9,18 +9,21 @@
 
 #!/bin/bash
 
-CURRENTUSER="$1"
-DIRECTORY="$2"
+# Check if user was specified otherwise use current user.
+# Set variable to first argument if it was provided.
+CURRENTUSER=${1:-$(whoami)}
+# Check if directory was specified otherwise use current.
+DIRECTORY=${2:-$(pwd)}
 
 # Check if user was specified otherwise use current user.
 # -z checks for empty variable (0).
-if [ -z "$1" ];
-    then CURRENTUSER=$(whoami)
-fi
+# if [ -z "$1" ];
+#     then CURRENTUSER=$(whoami)
+# fi
 # Check if DIRECTORY was specified otherwise use current.
-if [ -z "$2" ];
-    then DIRECTORY=$(pwd)
-fi
+# if [ -z "$2" ];
+#     then DIRECTORY=$(pwd)
+# fi
 
 # Check if specified DIRECTORY is path. 
 if [ -d $DIRECTORY ]; 
