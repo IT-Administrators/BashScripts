@@ -6,9 +6,13 @@
 #!/bin/bash
 
 # ----DESCRIPTION
-# Get the fsize of the current directory.
+# Get the size of the current directory.
 # ----END
 
 DIR="$1"
+# Check if direcotry provided.
+if [ -z "$1" ];
+    then DIR=$(pwd)
+fi
 
 du $DIR -sh
